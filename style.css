@@ -351,6 +351,7 @@ background-color: rgb(130, 186, 255);
         display: flex;
         justify-content: flex-end;
         flex-direction: row;
+        margin-left: -100px;
     }
     .list{
         width: 250px;
