@@ -360,10 +360,10 @@ background-color: rgb(130, 186, 255);
         align-items: center;
         list-style-type: none;
         margin-top: 10px;
-        padding: 0px 20px 0px 10px;
+        padding: 0px 20px 0px 0px;
         justify-content: space-between;
-        position: relative;
-        left: -210px;
+        position: absolute;
+        left: 0;
     }
     .popup__content{
         position: absolute;
