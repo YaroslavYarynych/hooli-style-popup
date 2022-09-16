@@ -256,6 +256,7 @@ background-color: rgb(130, 186, 255);
         align-items: center;
         list-style-type: none;
         margin-top: 10px;
+        margin-left: 20px;
         padding: 0px 20px 0px 10px;
         justify-content: space-between;
     }
@@ -340,6 +341,17 @@ background-color: rgb(130, 186, 255);
      }
   }
   @media screen and (max-width: 600px) {
+    .header{
+        width: 100%;
+        height: 100px;
+        display: flex;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
     .list{
         width: 250px;
         height: 150px;
@@ -400,7 +412,7 @@ background-color: rgb(130, 186, 255);
     }
     .text{
         position: relative;
-        top: 88%;
+        top: 84%;
         color: black;
     }
     .atom__text, .react__text{
@@ -410,10 +422,10 @@ background-color: rgb(130, 186, 255);
         left: 23%;
     }
     .light_text{
-        left: 5%;
+        left: 0;
     }
     .ill__text, .af__text{
-        left: 10%;
+        left: 2%;
     }
     .figma__text, .canva__text{
         left: 24%;
@@ -422,7 +434,7 @@ background-color: rgb(130, 186, 255);
         left: 18%;
     }
     .blender__text{
-        left: 20%;
+        left: 16%;
     }
     .popup__content::-webkit-scrollbar {
         width: 10px;
