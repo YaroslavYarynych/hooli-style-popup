@@ -339,3 +339,92 @@ background-color: rgb(130, 186, 255);
         width: 10px;
      }
   }
+  @media screen and (max-width: 600px) {
+    .list{
+        width: 250px;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style-type: none;
+        margin-top: 10px;
+        padding: 0px 20px 0px 10px;
+        justify-content: space-between;
+    }
+    .popup__content{
+        position: absolute;
+        width: 200px;
+        height: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        list-style-type: none;
+        display: none; 
+        overflow-y: scroll;
+        background-color: #757F9A;
+    }
+    .popup__item, .more__item{
+        width: 55px;
+        height: 55px;
+        padding-left: 9.1px;
+        margin-top: 10px;
+        background-color: aliceblue;
+        border-radius: 35%;
+    }
+
+    .more__list__content{
+        position: absolute;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        list-style-type: none;
+         display: none; 
+        background-color: #757F9A;
+        left: 0;
+    }
+    .imge, .more__icon{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 4px auto;
+    }
+    .text{
+        position: relative;
+        top: 85%;
+        color: black;
+        font-size: 8px;
+    }
+    .text{
+        position: relative;
+        top: 88%;
+        color: black;
+    }
+    .atom__text, .react__text{
+        left: 26%;
+    }
+    .git__text, .kahoot__text{
+        left: 23%;
+    }
+    .light_text{
+        left: 5%;
+    }
+    .ill__text, .af__text{
+        left: 10%;
+    }
+    .figma__text, .canva__text{
+        left: 24%;
+    }
+    .kahoot__text, .discord__text, .quizlet__text{
+        left: 18%;
+    }
+    .blender__text{
+        left: 20%;
+    }
+    .popup__content::-webkit-scrollbar {
+        width: 10px;
+     }
+  }
