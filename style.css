@@ -1,0 +1,341 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+span, a{
+    display: inline-block;
+}
+body{
+    height: 100%;
+    background-color: #870000;
+    background: #757F9A;  
+    background: -webkit-linear-gradient(to top, #D7DDE8, #757F9A);  
+    background: linear-gradient(to top, #D7DDE8, #757F9A); 
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+.list{
+    width: 600px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 10px;
+    margin-right: 40px;
+    padding: 0px 20px 0px 10px;
+    justify-content: space-between;
+}
+.list__item{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-position: center;
+}
+.cont{
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.checkbox__class, .checkbox__class__item{
+     -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none; 
+    position: absolute;
+}
+.conversation{
+    background-image: url(icons/lightBackgroundIcon/settings80.svg);
+    position: relative;
+}
+.creative{
+    background-image: url(icons/lightBackgroundIcon/doc80.svg);
+}
+label .cont{
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+    border-radius: 50%;
+}
+.cont{
+    position: relative;
+    border-radius: 50%;
+}
+ul{
+    display: inline-block;
+}
+.popup__content{
+    position: absolute;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    display: none; 
+    overflow-y: scroll;
+    background-color: #757F9A;
+}
+.more__list__content{
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+     display: none; 
+    background-color: #757F9A;
+    left: 0;
+}
+.popup__more{
+    position: relative;
+    margin: 10px 0px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.checkbox__class__item:checked ~ .more__list__content{
+    display: flex;
+}
+.checkbox__class:checked ~ .list__img{
+    background-color: #C7EDE6;
+    outline: none;
+}
+.popup__item, .more__item{
+    width: 100px;
+    height: 100px;
+    padding-left: 9.1px;
+    margin-top: 10px;
+    background-color: aliceblue;
+    border-radius: 35%;
+}
+.imge, .more__icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.checkbox__class:checked ~ .popup__content{
+    display: flex;
+    border: 1px solid #000;
+}
+.checkbox__class:checked ~ * .list__img,
+.checkbox__class:focus ~ * .list__img
+{
+    background-color: #C7EDE6;
+    outline: none;
+}
+.text{
+    position: relative;
+    top: 93%;
+    color: black;
+}
+.atom__text, .react__text{
+    left: 28%;
+}
+.git__text, .kahoot__text{
+    left: 22%;
+}
+.light_text{
+    left: 7%;
+}
+.ill__text, .af__text{
+    left: 14%;
+}
+.figma__text, .canva__text{
+    left: 27%;
+}
+.kahoot__text, .discord__text, .quizlet__text{
+    left: 20%;
+}
+.blender__text{
+    left: 20%;
+}
+.popup__content::-webkit-scrollbar {
+    width: 10px;
+ }
+
+ .popup__content::-webkit-scrollbar-track {
+    background: #232526;
+background: -webkit-linear-gradient(to right, #414345, #232526);  
+background: linear-gradient(to right, #414345, #232526);
+
+}
+.popup__content::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(205, 205, 205, 0.5);
+}
+.conversation:focus,
+.list__img:focus,
+.creative:focus,
+.image:focus,
+.home:focus,
+.more__item:focus,
+.popup__item:focus
+{
+    background-color: #C7EDE6;
+    outline: none;
+}
+.more__item:hover{
+    background-color: rgb(130, 186, 255);
+}
+.popup__item:hover{
+    background-color: rgb(130, 186, 255);
+}
+.list__item:hover{
+background-color: rgb(130, 186, 255);
+}
+.git{
+    background-image: url(icons/lightBackgroundIcon/github.svg);
+}
+.atom{
+    background-image: url(icons/lightBackgroundIcon/atom-editor.svg);
+}
+.react{
+    background-image: url(icons/lightBackgroundIcon/react.svg);
+}
+.adobe__lightroon{
+    background-image: url(icons/lightBackgroundIcon/adobeLight.svg);
+}
+.adobe__illust{
+    background-image: url(icons/lightBackgroundIcon/adobeIll.svg);
+}
+.adobe__afteref{
+    background-image: url(icons/lightBackgroundIcon/AdobeAE.svg);
+}
+.figma{
+    background-image: url(icons/lightBackgroundIcon/figma.svg);
+}
+.canva{
+    background-image: url(icons/lightBackgroundIcon/canva.svg);
+}
+.blender{
+    background-image: url(icons/lightBackgroundIcon/blender.svg);
+}
+.list__img{
+    background-image: url(icons/lightBackgroundIcon/menu80.svg);
+}
+.image{
+    background-image: url(icons/lightBackgroundIcon/ironMan80.svg);  
+}
+.home{
+    background-image: url(icons/lightBackgroundIcon/home80.svg);
+}
+.kahoot{
+    background-image: url(icons/lightBackgroundIcon/kahoot.svg);
+}
+.discord{
+    background-image: url(icons/lightBackgroundIcon/discord.svg);
+}
+.quiz{
+    background-image: url(icons/lightBackgroundIcon/quizlet.svg);
+}
+@media screen and (max-width: 992px) {
+    .list{
+        width: 400px;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style-type: none;
+        margin-top: 10px;
+        padding: 0px 20px 0px 10px;
+        justify-content: space-between;
+    }
+    .popup__content{
+        position: absolute;
+        width: 250px;
+        height: 350px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        list-style-type: none;
+        display: none; 
+        overflow-y: scroll;
+        background-color: #757F9A;
+    }
+    .popup__item, .more__item{
+        width: 75px;
+        height: 75px;
+        padding-left: 9.1px;
+        margin-top: 10px;
+        background-color: aliceblue;
+        border-radius: 35%;
+    }
+
+    .more__list__content{
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        list-style-type: none;
+         display: none; 
+        background-color: #757F9A;
+        left: 0;
+    }
+    .imge, .more__icon{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 4px auto;
+    }
+    .text{
+        position: relative;
+        top: 85%;
+        color: black;
+        font-size: 10px;
+    }
+    .text{
+        position: relative;
+        top: 88%;
+        color: black;
+    }
+    .atom__text, .react__text{
+        left: 29%;
+    }
+    .git__text, .kahoot__text{
+        left: 25%;
+    }
+    .kahoot__text{
+        left: 32%;
+    }
+    .light_text{
+        left: 13%;
+    }
+    .ill__text, .af__text{
+        left: 16%;
+    }
+    .figma__text, .canva__text{
+        left: 27%;
+    }
+    .kahoot__text, .discord__text, .quizlet__text{
+        left: 23%;
+    }
+    .blender__text{
+        left: 20%;
+    }
+    .popup__content::-webkit-scrollbar {
+        width: 10px;
+     }
+  }
